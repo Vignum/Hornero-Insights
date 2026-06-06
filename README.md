@@ -8,6 +8,11 @@ This repository contains public sample outputs from Hornero research products.
 
 The goal is to demonstrate data structure, research methodology, source reconciliation, and reporting style.
 
+## Links
+
+- 🌐 Website: [Hornero Insights](https://hornero-insights.sectorwitness.workers.dev/)
+- 📧 Contact: sectorwitness@gmail.com
+
 ---
 
 ## Research Areas
