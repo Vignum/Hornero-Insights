@@ -1,84 +1,207 @@
-# Hornero Insights Samples #
+# Hornero Insights Samples
 
 Evidence-based research samples for complex, event-driven markets.
 
-This repository contains public sample outputs from Hornero Insights research pipelines. It is intended to show the structure, style, and type of research artifacts produced by Hornero.
+Hornero Insights develops research pipelines that collect, validate, reconcile, and monitor data from multiple public sources.
 
-## What Hornero Does ##
+This repository contains public sample outputs from Hornero research products.
 
-Hornero builds research pipelines that collect, validate, and reconcile data from multiple public sources.
+The goal is to demonstrate data structure, research methodology, source reconciliation, and reporting style.
 
-We don't give financial or legal advice.
+---
 
-The focus is on:
+## Research Areas
 
-- source reconciliation
-- market monitoring
-- evidence trails
-- event tracking
-- physical regime context
-- data quality checks
-- research transparency
+### Pharma Catalysts
 
-## Research Areas ##
-
-### Pharma Catalysts 
+Research focused on regulatory and clinical catalysts.
 
 Sample outputs may include:
 
 - FDA catalyst calendars
-- regulatory event briefings
-- FDA press and AdCom evidence
+- Regulatory event briefings
+- FDA Press and Advisory Committee evidence
 - ClinicalTrials.gov context
-- SEC/company disclosure monitoring
-- catalyst status snapshots
+- Company disclosure monitoring
+- Catalyst status snapshots
+- Source reconciliation reports
 
-### Agriculture Fundamentals 
+### Agriculture Fundamentals
+
+Research focused on production, weather, and global commodity flows.
 
 Sample outputs may include:
 
 - USDA vs local source reconciliation
-- CONAB (Brasil), MAGyP, Bolsa and BCR (Argentina) comparisons
-- crop stress grids
-- NDVI, soil moisture and precipitation context
+- CONAB, MAGyP, Bolsa and BCR comparisons
+- Crop stress grids
+- NDVI and vegetation monitoring
+- Soil moisture context
+- Weather and precipitation analysis
 - WASDE revision tracking
-- production and ending stock divergence
+- Production and ending-stock divergence
 
-### Energy Physical Regimes 
+### Energy Physical Regimes
+
+Research focused on physical commodity balances.
 
 Sample outputs may include:
 
-- EIA oil inventory trends
-- crude, gasoline and distillate balances
-- crack spread and demand context
-- OPEC vs EIA authority reconciliation
-- natural gas storage and weather context
+- EIA inventory trends
+- Crude, gasoline, and distillate balances
+- Crack spread monitoring
+- Demand and export context
 - LNG flow monitoring
+- OPEC vs EIA reconciliation
+- Physical regime briefings
 
-## Repository Contents ##
+---
 
-This repository contains sample files only.
+## Sample Dataset
 
-It does not include:
+Example: Agri Crop Stress Dataset
 
-- production source code
-- private infrastructure
-- API keys
-- proprietary datasets
-- internal scoring models
-- paid product feeds
+```json
+{
+  "country": "ARGENTINA",
+  "commodity": "CORN",
+  "weather": {
+    "soil_moisture_context": "dry_surface"
+  },
+  "production": {
+    "usda_production_mmt": 59.0,
+    "local_anchor_source": "MAGYP",
+    "local_production_mmt": 51.69,
+    "local_sources_divergence_flag": true
+  }
+}
+```
 
-Example structure:
+### What This Shows
+
+- Source reconciliation
+- Official versus local production estimates
+- Weather context
+- Soil moisture conditions
+- Export demand indicators
+- Data quality flags
+- Evidence-oriented research outputs
+
+---
+
+## Research Principles
+
+Hornero follows a source-first methodology.
+
+1. Collect data from public sources.
+2. Preserve evidence whenever possible.
+3. Validate using independent witnesses.
+4. Reconcile disagreements between sources.
+5. Report uncertainty and missing data.
+6. Avoid invented values and unsupported conclusions.
+
+If a source does not provide a value, Hornero reports the absence rather than estimating a replacement.
+
+---
+
+## Repository Structure
 
 ```text
 pharma/
-  sample_catalyst_briefing.xlsx
-  sample_pharma_snapshot.json
+├── sample_catalyst_briefing.xlsx
+├── sample_pharma_snapshot.json
+└── sample_reconciliation.csv
 
 agri/
-  sample_agri_stress_grid.xlsx
-  sample_source_reconciliation.json
+├── sample_crop_stress.json
+├── sample_stress_grid.xlsx
+└── sample_reconciliation.csv
 
 energy/
-  sample_oil_physical_regime.xlsx
-  sample_gas_regime.json
+├── sample_physical_regime.xlsx
+├── sample_energy_snapshot.json
+└── sample_regime_briefing.pdf
+```
+
+---
+
+## What Is Included
+
+Public sample outputs.
+
+Examples of:
+
+- Research datasets
+- Sample reports
+- Example briefings
+- Example spreadsheets
+- Example JSON exports
+
+---
+
+## What Is NOT Included
+
+This repository does **not** contain:
+
+- Production source code
+- Internal infrastructure
+- Proprietary pipelines
+- Internal scoring systems
+- API keys
+- Commercial datasets
+- Private research products
+
+---
+
+## Not Investment Advice
+
+The materials contained in this repository are provided solely for research, educational, monitoring, and evaluation purposes.
+
+Nothing contained in this repository constitutes:
+
+- Investment advice
+- Financial advice
+- Trading advice
+- Legal advice
+- Tax advice
+- A recommendation to buy, sell, hold, short, or trade any security, commodity, derivative, fund, token, or financial instrument
+
+Users are solely responsible for their own analysis, due diligence, and decisions.
+
+---
+
+## License
+
+Copyright © Hornero Insights.
+
+All rights reserved.
+
+This repository contains public sample materials provided for evaluation and informational purposes only.
+
+You may:
+
+- View the contents of this repository
+- Download copies for personal evaluation
+- Reference the repository with attribution
+
+You may not:
+
+- Redistribute the materials as a commercial product
+- Sell, sublicense, or resell repository contents
+- Create competing commercial products using repository contents
+- Repackage repository contents for commercial distribution
+- Remove copyright notices
+
+Permission for commercial use must be obtained in writing from Hornero Insights.
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+---
+
+## Contact
+
+For commercial access, partnerships, licensing inquiries, or current research products:
+
+**Hornero Insights**
+
+Research, not recommendations.
