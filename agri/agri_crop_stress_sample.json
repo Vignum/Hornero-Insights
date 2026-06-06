@@ -1,0 +1,180 @@
+{
+  "product": "Hornero Agri Commodity Stress Data",
+  "product_line": "Hornero Insights",
+  "version": "0.1",
+  "generated_at": "2026-06-06T21:09:24Z",
+  "disclaimer": "Hornero Insights provides structured datasets derived from public sources for informational and research purposes only. This is not investment, financial, legal, or trading advice. Hornero does not recommend the purchase, sale, or holding of any security. Verify all data independently before use.",
+  "note": "Public sample (3 of 9 grid rows). Full dataset: hornero_event_data/agri/agri_crop_stress.json. Argentina local anchor priority: MAGyP > Bolsa Current > BCR. PAS production_projection is weekly context, not the primary anchor. soil_moisture_context from NASA POWER GWETTOP (witness_precipitation + witness_soil_moisture). china_share_ratio is 0–1 (multiply by 100 for percent).",
+  "field_glossary": {
+    "local_production_mmt": "Primary local anchor (see local_anchor_source). Official source first.",
+    "local_anchor_source": "Primary local production source selected by country-specific priority rules. For Argentina, the default priority is MAGyP > Bolsa Current > BCR. PAS weekly projections are contextual and may differ from the anchor.",
+    "local_production_sources": "All Argentina local sources when available (semicolon-separated).",
+    "local_sources_divergence_flag": "True when local sources differ materially, such as MAGyP production versus Bolsa PAS projection.",
+    "bolsa_current_production_mmt": "Bolsa Panorama current-campaign estimate — secondary reference, not anchor.",
+    "bolsa_pas_production_projection_mmt": "Bolsa PAS weekly projection — market context, not production anchor.",
+    "bcr_production_mmt": "BCR campaign estimate — secondary local market reference.",
+    "china_share_ratio": "China share of weekly export sales as ratio 0–1.",
+    "supply_pressure_pct": "(USDA − local anchor) / USDA × 100. Research metric only."
+  },
+  "crop_stress": [
+    {
+      "report_date": "2026-06-06",
+      "country": "BRAZIL",
+      "commodity": "CORN",
+      "crop_stage": "harvest_or_off",
+      "critical_window_flag": false,
+      "enso": {
+        "phase": "neutral",
+        "oni": 0.48
+      },
+      "weather": {
+        "rainfall_15d_mm": 27.78,
+        "peer_median_15d_mm": 27.78,
+        "rainfall_ratio": 1.0,
+        "vhi": 63.03,
+        "stress_bucket": "low_to_moderate",
+        "soil_moisture_context": "moderate_surface_moisture"
+      },
+      "production": {
+        "usda_production_mmt": 135.0,
+        "local_anchor_source": "CONAB",
+        "local_production_mmt": 141.1576,
+        "local_production_sources": "CONAB=141.2",
+        "local_sources_divergence_flag": false,
+        "magyp_production_mmt": null,
+        "bolsa_current_production_mmt": null,
+        "bcr_production_mmt": null,
+        "bolsa_pas_production_projection_mmt": null,
+        "usda_local_delta_mmt": -6.157600000000002
+      },
+      "argentina_bolsa_pas": null,
+      "export_demand": {
+        "export_sales_mt": 26452.11847185531,
+        "china_sales_mt": 0.0,
+        "china_share_ratio": 0.0,
+        "china_imports_mmt": 6.0,
+        "china_import_trend": "unknown",
+        "china_demand_pressure": "soft",
+        "china_demand_data_source": null,
+        "pace_vs_5y_avg": null,
+        "pace_context": ""
+      },
+      "data_quality": {
+        "notes": "ok"
+      },
+      "source_family": "NOAA|USDA|NASA|CONAB|BCR",
+      "last_updated": "2026-06-06T21:09:24Z"
+    },
+    {
+      "report_date": "2026-06-06",
+      "country": "ARGENTINA",
+      "commodity": "CORN",
+      "crop_stage": "harvest",
+      "critical_window_flag": false,
+      "enso": {
+        "phase": "neutral",
+        "oni": 0.48
+      },
+      "weather": {
+        "rainfall_15d_mm": 9.5,
+        "peer_median_15d_mm": 7.5,
+        "rainfall_ratio": 1.267,
+        "vhi": 50.98,
+        "stress_bucket": "low_to_moderate",
+        "soil_moisture_context": "dry_surface"
+      },
+      "production": {
+        "usda_production_mmt": 59.0,
+        "local_anchor_source": "MAGYP",
+        "local_production_mmt": 51.69,
+        "local_production_sources": "BCR=68.0; BOLSA_CURRENT=64.0; MAGYP=51.7",
+        "local_sources_divergence_flag": true,
+        "magyp_production_mmt": 51.69,
+        "bolsa_current_production_mmt": 64.0,
+        "bcr_production_mmt": 68.0,
+        "bolsa_pas_production_projection_mmt": 64.0,
+        "usda_local_delta_mmt": 7.310000000000002
+      },
+      "argentina_bolsa_pas": {
+        "report_date": "2026-06-03",
+        "planting_progress_pct": null,
+        "harvest_progress_pct": 40.6,
+        "avg_yield_qq_ha": 44.6,
+        "production_projection_mmt": 64.0,
+        "projected_area_mha": null,
+        "weekly_context_note": "harvest=40.6; yield_qq/Ha=44.6; prod_MTn=64.0"
+      },
+      "export_demand": {
+        "export_sales_mt": 26452.11847185531,
+        "china_sales_mt": 0.0,
+        "china_share_ratio": 0.0,
+        "china_imports_mmt": 6.0,
+        "china_import_trend": "unknown",
+        "china_demand_pressure": "soft",
+        "china_demand_data_source": null,
+        "pace_vs_5y_avg": null,
+        "pace_context": ""
+      },
+      "data_quality": {
+        "notes": "local_sources_divergence"
+      },
+      "source_family": "NOAA|USDA|NASA|BCR|Bolsa_PAS",
+      "last_updated": "2026-06-06T21:09:24Z"
+    },
+    {
+      "report_date": "2026-06-06",
+      "country": "USA",
+      "commodity": "SOYBEANS",
+      "crop_stage": "planting",
+      "critical_window_flag": false,
+      "enso": {
+        "phase": "neutral",
+        "oni": 0.48
+      },
+      "weather": {
+        "rainfall_15d_mm": 20.669999999999998,
+        "peer_median_15d_mm": 20.669999999999998,
+        "rainfall_ratio": 1.0,
+        "vhi": 49.86,
+        "stress_bucket": "moderate_stress",
+        "soil_moisture_context": "moderate_surface_moisture"
+      },
+      "production": {
+        "usda_production_mmt": 115.99,
+        "local_anchor_source": null,
+        "local_production_mmt": null,
+        "local_production_sources": null,
+        "local_sources_divergence_flag": false,
+        "magyp_production_mmt": null,
+        "bolsa_current_production_mmt": null,
+        "bcr_production_mmt": null,
+        "bolsa_pas_production_projection_mmt": null,
+        "usda_local_delta_mmt": null
+      },
+      "argentina_bolsa_pas": null,
+      "export_demand": {
+        "export_sales_mt": 9411.822338340955,
+        "china_sales_mt": 238.7600696712389,
+        "china_share_ratio": 0.02536810206229686,
+        "china_imports_mmt": 112.0,
+        "china_import_trend": "unknown",
+        "china_demand_pressure": "neutral",
+        "china_demand_data_source": null,
+        "pace_vs_5y_avg": null,
+        "pace_context": ""
+      },
+      "data_quality": {
+        "notes": "ok"
+      },
+      "source_family": "NOAA|USDA|NASA|CONAB|BCR",
+      "last_updated": "2026-06-06T21:09:24Z"
+    }
+  ],
+  "sample": true,
+  "public_sample_label": "PUBLIC SAMPLE",
+  "public_sample_notice": [
+    "Generated from Hornero Insights research pipelines.",
+    "Research and monitoring only.",
+    "Not legal, investment, or trading advice."
+  ]
+}
