@@ -22,7 +22,7 @@ The focus is on:
 
 ## Research Areas ##
 
-- Pharma Catalysts -
+### Pharma Catalysts 
 
 Sample outputs may include:
 
@@ -33,7 +33,7 @@ Sample outputs may include:
 - SEC/company disclosure monitoring
 - catalyst status snapshots
 
-- Agriculture Fundamentals -
+### Agriculture Fundamentals 
 
 Sample outputs may include:
 
@@ -44,7 +44,7 @@ Sample outputs may include:
 - WASDE revision tracking
 - production and ending stock divergence
 
-- Energy Physical Regimes -
+### Energy Physical Regimes 
 
 Sample outputs may include:
 
