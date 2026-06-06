@@ -1,0 +1,71 @@
+{
+  "product": "Hornero Oil Physical Regime Data",
+  "product_line": "Hornero Insights",
+  "version": "2.0",
+  "generated_at": "2026-06-06T21:09:20Z",
+  "disclaimer": "Hornero Insights provides structured datasets derived from public sources for informational and research purposes only. This is not investment, financial, legal, or trading advice. Hornero does not recommend the purchase, sale, or holding of any security. Verify all data independently before use.",
+  "eia_attribution": "This product uses U.S. Energy Information Administration (EIA) data but is not endorsed or certified by the EIA or the U.S. Department of Energy.",
+  "no_recommendations": true,
+  "week": "2026-05-29",
+  "oil_regime": "extended_regime_exhaustion",
+  "regime_age_weeks": 9,
+  "regime_lifecycle": "extended",
+  "regime_confidence": "MEDIUM",
+  "transition_risk": "HIGH",
+  "regime_stability": "fragile",
+  "regime_change_severity": "MODERATE",
+  "exhaustion_flag": true,
+  "physical_reality": [
+    "crude_drawing",
+    "gasoline_drawing"
+  ],
+  "inventory_pressure": "gas_drawing",
+  "crude_stock_change": "draw_7974kbbl_1w",
+  "gasoline_stock_change": "build_3364kbbl_1w",
+  "distillate_stock_change": "build_1502kbbl_1w",
+  "crack_spread_context": "crack_321_stable",
+  "demand_context": "gasoline_demand_stable; distillate_demand_stable",
+  "authority_event": "tightening",
+  "contradiction_flags": [
+    "cracks_contracting",
+    "demand_falling",
+    "policy_physical_convergence"
+  ],
+  "market_story": "Crude stocks drawing | OPEC declares tightening",
+  "physical_reality_narrative": "Crude drawing | Gasoline drawing",
+  "contradiction_note": null,
+  "regime_quality_model": {
+    "regime_confidence": "How coherently physical, margin, demand, and authority lenses align.",
+    "transition_risk": "Risk the current regime is near exhaustion or relabeling.",
+    "regime_stability": "Durability read: stable, fragile, or transitioning.",
+    "regime_change_severity": "Week-over-week change magnitude: MINOR, MODERATE, MAJOR."
+  },
+  "regime_note": "extended regime exhaustion; week 9 in regime; cracks contracting; demand falling; contradictions present.",
+  "authority_lens": {
+    "opec_signal": "TIGHTENING",
+    "authority_pressure": "elevated_tightening",
+    "opec_evidence": "OPEC official press | ingest=opec_wayback | date=2026-04-05 | signal=TIGHTENING | pick=policy_press_release | title=Saudi Arabia, Russia, Iraq, UAE, Kuwait, Kazakhstan, Algeria, and Oman adjust production and reaffirm commitment to mark | url=https://www.opec.org/pr-detail/597-5-april-2026.html | archive_snapshot=20260405225507",
+    "opec_quality_flag": "wayback_mirror",
+    "source_title": "Saudi Arabia, Russia, Iraq, UAE, Kuwait, Kazakhstan, Algeria, and Oman adjust production and reaffirm commitment to market stability",
+    "source_url": "https://www.opec.org/pr-detail/597-5-april-2026.html",
+    "statement_date": "2026-04-05",
+    "data_source": "opec_wayback",
+    "momr_note": null
+  },
+  "last_updated": "2026-06-06T21:09:20Z",
+  "weekly_history_count": 2694,
+  "weekly_changelog": {
+    "narrative": "2026-05-29 (vs 2026-05-22)\n\nRegime Change Severity:\nMODERATE\n\nOil Regime:\nextended_regime_exhaustion → unchanged\n\nRegime Age (weeks):\n8 → 9\n\nNew Contradiction:\ndemand_falling\n\nRemoved Contradiction:\ndemand_rising\n\nPhysical Reality:\ncrude_drawing persists\ngasoline_drawing persists\ndistillate_drawing no longer present\nrefiners_running_hard no longer present\n",
+    "prior_report_date": "2026-05-22",
+    "changed_sections": 3,
+    "regime_change_severity": "MODERATE"
+  },
+  "note": "Public sample (latest EIA week physical regime briefing). Weekly history (2694 weeks when exported): hornero_event_data/oil/oil_weekly_regime.csv. Full JSON: hornero_event_data/oil/oil_weekly_regime.json.",
+  "sample": true,
+  "public_sample_label": "PUBLIC SAMPLE",
+  "public_sample_notice": [
+    "Generated from Hornero Insights research pipelines.",
+    "Research and monitoring only.",
+    "Not legal, investment, or trading advice."
+  ]
+}
