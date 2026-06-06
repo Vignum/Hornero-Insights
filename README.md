@@ -200,7 +200,7 @@ THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMP
 
 ## Contact
 
-For commercial access, partnerships, licensing inquiries, or current research products:
+For commercial access, partnerships, licensing inquiries, or current research products: sectorwitness@gmail.com
 
 **Hornero Insights**
 
